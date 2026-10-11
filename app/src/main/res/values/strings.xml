@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Text File Reader</string>
+    <string name="open_file">Open File</string>
+    <string name="clear">Clear</string>
+    <string name="share">Share</string>
+    <string name="empty_title">No file opened</string>
+    <string name="empty_subtitle">Tap \"Open File\" or select a text file\nfrom your file manager to view it here.</string>
+</resources>

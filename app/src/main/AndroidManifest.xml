@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TextFileReader"
+        tools:targetApi="34">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TextFileReader">
+            <!-- Launcher entry -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Open text files from file managers / other apps -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:mimeType="text/*" />
+                <data android:mimeType="application/json" />
+                <data android:mimeType="application/xml" />
+                <data android:mimeType="application/javascript" />
+            </intent-filter>
+
+            <!-- Also catch common text extensions when MIME is not set -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\\.txt" />
+                <data android:pathPattern=".*\\.log" />
+                <data android:pathPattern=".*\\.md" />
+                <data android:pathPattern=".*\\.csv" />
+                <data android:pathPattern=".*\\.json" />
+                <data android:pathPattern=".*\\.xml" />
+                <data android:pathPattern=".*\\.html" />
+                <data android:pathPattern=".*\\.css" />
+                <data android:pathPattern=".*\\.js" />
+                <data android:pathPattern=".*\\.kt" />
+                <data android:pathPattern=".*\\.java" />
+                <data android:pathPattern=".*\\.py" />
+                <data android:pathPattern=".*\\.sh" />
+                <data android:pathPattern=".*\\.ini" />
+                <data android:pathPattern=".*\\.conf" />
+                <data android:pathPattern=".*\\.yaml" />
+                <data android:pathPattern=".*\\.yml" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
