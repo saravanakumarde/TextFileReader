@@ -8,11 +8,15 @@ Designed especially for devices (like Xiaomi / HyperOS) that lack a built-in tex
 
 - **Open from file manager**: When you tap a `.txt`, `.log`, `.md`, `.json`, `.xml`, `.csv`, etc. file, this app appears in the “Open with” list.
 - **In-app file picker**: Use the **Open File** button to browse any text file.
+- **Search**: Find text in the open file with highlighted matches and next/previous navigation.
+- **Font size**: Increase/decrease text size (A+/A− buttons and menu). Preference is saved.
+- **Recent files history**: Last 20 opened files are saved. Tap an entry to reopen it (if the file still exists). Dead entries are removed automatically.
 - **Monospace display** with selectable text.
 - **Line & character count**.
 - **Share** the content with other apps.
 - Works with both `content://` and `file://` URIs.
 - Supports UTF-8 (and BOM detection).
+- Persistable URI permissions when the system allows them (so history reopen works after restart).
 
 ## Supported file types
 

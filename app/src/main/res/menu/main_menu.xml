@@ -3,6 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/search"
+        app:showAsAction="ifRoom" />
+
+    <item
         android:id="@+id/action_open"
         android:icon="@android:drawable/ic_menu_upload"
         android:title="@string/open_file"
@@ -12,6 +18,21 @@
         android:id="@+id/action_share"
         android:icon="@android:drawable/ic_menu_share"
         android:title="@string/share"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_font_increase"
+        android:title="@string/font_increase"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_font_decrease"
+        android:title="@string/font_decrease"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_clear_history"
+        android:title="@string/clear_history"
+        app:showAsAction="never" />
 
 </menu>
